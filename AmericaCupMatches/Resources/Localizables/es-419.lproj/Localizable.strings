@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  AmericaCupMatches
+
+  Created by Andres Esteban Casas Venegas on 30/01/2024.
+  
+*/
+
+// MARK: - General
+"app_title" = "Copa América USA 2024";
+
+// MARK: - Match info
+"goals_sub_title" = "Goles";
+"cards_sub_title" = "Tarjetas";
