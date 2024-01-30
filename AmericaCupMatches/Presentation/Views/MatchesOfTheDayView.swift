@@ -25,73 +25,18 @@ struct MatchesOfTheDayView<ViewModel: MatchesOfTheDayViewModelProtocol>: View {
           .bold()
           .frame(maxWidth: .infinity, alignment: .leading)
           .padding(.horizontal, 16)
-        List(viewModel.matchesList) { value in
+        List(viewModel.matchesList) { match in
           ZStack {
-            VStack {
-              MatchView(value)
-            }
+            MatchView(match, spacing: 18)
+            .widthImages(widthImageAndText: 75, heightImage: 45)
             .background(Color.white)
             .cornerRadius(8)
             .shadow(radius: 8)
-//            VStack {
-//
-//             Spacer()
-//               .frame(height: 16)
-//
-//              Text(value.title)
-//                .bold()
-//              HStack {
-//
-//                Spacer()
-//
-//                VStack {
-//                  Image(value.localTeam.flag)
-//                    .resizable()
-//                    .frame(width: 50, height: 30)
-//                  Text(value.localTeam.name)
-//                    .font(.system(size: 16))
-//                    .frame(width: 80, alignment: .center)
-//                    .multilineTextAlignment(.center)
-//                    .scaledToFill()
-//                }
-//
-//                Spacer()
-//
-//                VStack {
-//                  Text(value.result)
-//                  Text(value.matchStatus.rawValue)
-//                    .bold()
-//                }
-//
-//                Spacer()
-//
-//                VStack {
-//                  Image(value.visitorTeam.flag)
-//                    .resizable()
-//                    .frame(width: 50, height: 30)
-//                  Text(value.visitorTeam.name)
-//                    .font(.system(size: 16))
-//                    .multilineTextAlignment(.center)
-//                    .frame(width: 80, alignment: .center)
-//                    .scaledToFill()
-//                }
-//
-//                Spacer()
-//
-//              }
-//
-//              Spacer()
-//                .frame(height: 16)
-//
-//            }
-//            .background(Color.white)
-//            .cornerRadius(8)
-//            .shadow(radius: 8)
-//
-            NavigationLink(destination: MatchInfoView(viewModel: MatchInfoViewModel(matchCell: value))) {
+            
+            NavigationLink(destination: MatchInfoView(viewModel: MatchInfoViewModel(matchCell: match))) {
               EmptyView()
             }
-            //.opacity(0)
+            .opacity(0)
           }
           .listRowBackground(Color.clear)
           .listRowSeparator(.hidden)
