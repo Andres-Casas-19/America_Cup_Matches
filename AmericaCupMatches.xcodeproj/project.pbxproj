@@ -27,6 +27,8 @@
 		DDB9BAAC2B61AA4300608886 /* MatchInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB9BAAB2B61AA4300608886 /* MatchInfoViewModel.swift */; };
 		DDB9BAAE2B61AA5900608886 /* MatchInfoViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB9BAAD2B61AA5900608886 /* MatchInfoViewModelProtocol.swift */; };
 		DDB9BAB02B631F8500608886 /* MatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB9BAAF2B631F8500608886 /* MatchView.swift */; };
+		DDE469C32B69A47100A53037 /* MatchInfoUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE469C22B69A47100A53037 /* MatchInfoUseCaseProtocol.swift */; };
+		DDE469C52B69A49E00A53037 /* MatchInfoUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE469C42B69A49E00A53037 /* MatchInfoUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +53,8 @@
 		DDB9BAAB2B61AA4300608886 /* MatchInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchInfoViewModel.swift; sourceTree = "<group>"; };
 		DDB9BAAD2B61AA5900608886 /* MatchInfoViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchInfoViewModelProtocol.swift; sourceTree = "<group>"; };
 		DDB9BAAF2B631F8500608886 /* MatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchView.swift; sourceTree = "<group>"; };
+		DDE469C22B69A47100A53037 /* MatchInfoUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchInfoUseCaseProtocol.swift; sourceTree = "<group>"; };
+		DDE469C42B69A49E00A53037 /* MatchInfoUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchInfoUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,8 +155,10 @@
 		DD677F992B5EEFC800AAB307 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
-				DD677F9A2B5EF0ED00AAB307 /* TeamsUseCase.swift */,
 				DD677FA42B5F167E00AAB307 /* TeamsUseCaseProtocol.swift */,
+				DD677F9A2B5EF0ED00AAB307 /* TeamsUseCase.swift */,
+				DDE469C22B69A47100A53037 /* MatchInfoUseCaseProtocol.swift */,
+				DDE469C42B69A49E00A53037 /* MatchInfoUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -306,6 +312,7 @@
 				DD677FA12B5F06FD00AAB307 /* MatchesOfTheDayViewModel.swift in Sources */,
 				DD7488A92B697F74002F755D /* CardModel.swift in Sources */,
 				DDB9BAAC2B61AA4300608886 /* MatchInfoViewModel.swift in Sources */,
+				DDE469C32B69A47100A53037 /* MatchInfoUseCaseProtocol.swift in Sources */,
 				DD677F842B5EC72800AAB307 /* MatchesOfTheDayView.swift in Sources */,
 				DD7488AB2B697F99002F755D /* CardColorEnum.swift in Sources */,
 				DD7488A52B697E3F002F755D /* GoalsModel.swift in Sources */,
@@ -313,6 +320,7 @@
 				DDB9BAAE2B61AA5900608886 /* MatchInfoViewModelProtocol.swift in Sources */,
 				DD677FA72B6073DE00AAB307 /* MatchInfoView.swift in Sources */,
 				DD74889F2B697DB1002F755D /* MatchDetailsModel.swift in Sources */,
+				DDE469C52B69A49E00A53037 /* MatchInfoUseCase.swift in Sources */,
 				DDB9BAB02B631F8500608886 /* MatchView.swift in Sources */,
 				DD677F972B5ECCF800AAB307 /* TeamModel.swift in Sources */,
 				DD677F822B5EC72800AAB307 /* AmericaCupMatchesApp.swift in Sources */,
