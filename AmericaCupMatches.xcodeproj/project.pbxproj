@@ -83,11 +83,10 @@
 		DD677F802B5EC72800AAB307 /* AmericaCupMatches */ = {
 			isa = PBXGroup;
 			children = (
+				DD7488AD2B698129002F755D /* App */,
 				DD7488952B6947D0002F755D /* Resources */,
 				DD677F982B5EEFB000AAB307 /* Domain */,
 				DD677F8F2B5EC82600AAB307 /* Presentation */,
-				DD677F812B5EC72800AAB307 /* AmericaCupMatchesApp.swift */,
-				DD677F852B5EC72A00AAB307 /* Assets.xcassets */,
 				DD677F872B5EC72A00AAB307 /* Preview Content */,
 			);
 			path = AmericaCupMatches;
@@ -107,6 +106,7 @@
 				DD677F932B5EC97F00AAB307 /* Entities */,
 				DD677F922B5EC88C00AAB307 /* ViewModels */,
 				DD677F902B5EC87A00AAB307 /* Views */,
+				DD7488AC2B6980AD002F755D /* Components */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -116,7 +116,6 @@
 			children = (
 				DD677F832B5EC72800AAB307 /* MatchesOfTheDayView.swift */,
 				DD677FA62B6073DE00AAB307 /* MatchInfoView.swift */,
-				DDB9BAAF2B631F8500608886 /* MatchView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -209,6 +208,23 @@
 				DD7488AA2B697F99002F755D /* CardColorEnum.swift */,
 			);
 			path = Cards;
+			sourceTree = "<group>";
+		};
+		DD7488AC2B6980AD002F755D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DDB9BAAF2B631F8500608886 /* MatchView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		DD7488AD2B698129002F755D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DD677F812B5EC72800AAB307 /* AmericaCupMatchesApp.swift */,
+				DD677F852B5EC72A00AAB307 /* Assets.xcassets */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
