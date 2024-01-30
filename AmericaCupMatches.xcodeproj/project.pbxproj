@@ -20,6 +20,10 @@
 		DD677FA52B5F167E00AAB307 /* TeamsUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD677FA42B5F167E00AAB307 /* TeamsUseCaseProtocol.swift */; };
 		DD677FA72B6073DE00AAB307 /* MatchInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD677FA62B6073DE00AAB307 /* MatchInfoView.swift */; };
 		DD7488992B694BD9002F755D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD74889B2B694BD9002F755D /* Localizable.strings */; };
+		DD74889F2B697DB1002F755D /* MatchDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD74889E2B697DB1002F755D /* MatchDetailsModel.swift */; };
+		DD7488A52B697E3F002F755D /* GoalsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7488A42B697E3F002F755D /* GoalsModel.swift */; };
+		DD7488A92B697F74002F755D /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7488A82B697F74002F755D /* CardModel.swift */; };
+		DD7488AB2B697F99002F755D /* CardColorEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7488AA2B697F99002F755D /* CardColorEnum.swift */; };
 		DDB9BAAC2B61AA4300608886 /* MatchInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB9BAAB2B61AA4300608886 /* MatchInfoViewModel.swift */; };
 		DDB9BAAE2B61AA5900608886 /* MatchInfoViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB9BAAD2B61AA5900608886 /* MatchInfoViewModelProtocol.swift */; };
 		DDB9BAB02B631F8500608886 /* MatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB9BAAF2B631F8500608886 /* MatchView.swift */; };
@@ -40,6 +44,10 @@
 		DD677FA42B5F167E00AAB307 /* TeamsUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsUseCaseProtocol.swift; sourceTree = "<group>"; };
 		DD677FA62B6073DE00AAB307 /* MatchInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchInfoView.swift; sourceTree = "<group>"; };
 		DD74889A2B694BD9002F755D /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		DD74889E2B697DB1002F755D /* MatchDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailsModel.swift; sourceTree = "<group>"; };
+		DD7488A42B697E3F002F755D /* GoalsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsModel.swift; sourceTree = "<group>"; };
+		DD7488A82B697F74002F755D /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		DD7488AA2B697F99002F755D /* CardColorEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardColorEnum.swift; sourceTree = "<group>"; };
 		DDB9BAAB2B61AA4300608886 /* MatchInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchInfoViewModel.swift; sourceTree = "<group>"; };
 		DDB9BAAD2B61AA5900608886 /* MatchInfoViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchInfoViewModelProtocol.swift; sourceTree = "<group>"; };
 		DDB9BAAF2B631F8500608886 /* MatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchView.swift; sourceTree = "<group>"; };
@@ -128,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				DD74889C2B697A03002F755D /* MatchesOfTheDay */,
+				DD74889D2B697D7A002F755D /* MatchDetails */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -173,6 +182,33 @@
 				DD677F962B5ECCF800AAB307 /* TeamModel.swift */,
 			);
 			path = MatchesOfTheDay;
+			sourceTree = "<group>";
+		};
+		DD74889D2B697D7A002F755D /* MatchDetails */ = {
+			isa = PBXGroup;
+			children = (
+				DD74889E2B697DB1002F755D /* MatchDetailsModel.swift */,
+				DD7488A32B697E2B002F755D /* Goals */,
+				DD7488A72B697E8B002F755D /* Cards */,
+			);
+			path = MatchDetails;
+			sourceTree = "<group>";
+		};
+		DD7488A32B697E2B002F755D /* Goals */ = {
+			isa = PBXGroup;
+			children = (
+				DD7488A42B697E3F002F755D /* GoalsModel.swift */,
+			);
+			path = Goals;
+			sourceTree = "<group>";
+		};
+		DD7488A72B697E8B002F755D /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				DD7488A82B697F74002F755D /* CardModel.swift */,
+				DD7488AA2B697F99002F755D /* CardColorEnum.swift */,
+			);
+			path = Cards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,11 +288,15 @@
 				DD677F9F2B5EF33D00AAB307 /* MatchStatusEnum.swift in Sources */,
 				DD677F9B2B5EF0ED00AAB307 /* TeamsUseCase.swift in Sources */,
 				DD677FA12B5F06FD00AAB307 /* MatchesOfTheDayViewModel.swift in Sources */,
+				DD7488A92B697F74002F755D /* CardModel.swift in Sources */,
 				DDB9BAAC2B61AA4300608886 /* MatchInfoViewModel.swift in Sources */,
 				DD677F842B5EC72800AAB307 /* MatchesOfTheDayView.swift in Sources */,
+				DD7488AB2B697F99002F755D /* CardColorEnum.swift in Sources */,
+				DD7488A52B697E3F002F755D /* GoalsModel.swift in Sources */,
 				DD677F9D2B5EF20100AAB307 /* MatchCell.swift in Sources */,
 				DDB9BAAE2B61AA5900608886 /* MatchInfoViewModelProtocol.swift in Sources */,
 				DD677FA72B6073DE00AAB307 /* MatchInfoView.swift in Sources */,
+				DD74889F2B697DB1002F755D /* MatchDetailsModel.swift in Sources */,
 				DDB9BAB02B631F8500608886 /* MatchView.swift in Sources */,
 				DD677F972B5ECCF800AAB307 /* TeamModel.swift in Sources */,
 				DD677F822B5EC72800AAB307 /* AmericaCupMatchesApp.swift in Sources */,
