@@ -127,10 +127,10 @@
 		DD677F922B5EC88C00AAB307 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				DD677FA02B5F06FD00AAB307 /* MatchesOfTheDayViewModel.swift */,
 				DD677FA22B5F07E400AAB307 /* MatchesOfTheDayViewModelProtocol.swift */,
-				DDB9BAAB2B61AA4300608886 /* MatchInfoViewModel.swift */,
+				DD677FA02B5F06FD00AAB307 /* MatchesOfTheDayViewModel.swift */,
 				DDB9BAAD2B61AA5900608886 /* MatchInfoViewModelProtocol.swift */,
+				DDB9BAAB2B61AA4300608886 /* MatchInfoViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";

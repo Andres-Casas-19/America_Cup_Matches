@@ -20,6 +20,7 @@ struct MatchInfoView<ViewModel: MatchInfoViewModelProtocol>: View {
 
 struct MatchInfoView_Previews: PreviewProvider {
   static var previews: some View {
-    MatchInfoView(viewModel: MatchInfoViewModel(matchCell: TeamsUseCase().getMatchesList().first!))
+    MatchInfoView(viewModel: MatchInfoViewModel(useCase: MatchInfoUseCase(),
+                                                matchCell: TeamsUseCase().getMatchesList().first!))
   }
 }

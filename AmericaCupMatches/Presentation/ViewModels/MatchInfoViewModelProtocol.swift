@@ -8,5 +8,12 @@
 import Foundation
 
 protocol MatchInfoViewModelProtocol: ObservableObject {
+  
+  // MARK: - Properties
   var matchCell: MatchCell { get set }
+  var matchDetails: [MatchDetailsModel] { get set }
+  
+  // MARK: - Methods
+  func getMatchInfo()
+  
 }

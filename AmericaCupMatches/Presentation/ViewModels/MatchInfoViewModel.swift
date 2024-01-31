@@ -7,12 +7,23 @@
 
 import Foundation
 
-class MatchInfoViewModel: MatchInfoViewModelProtocol {
+final class MatchInfoViewModel: MatchInfoViewModelProtocol {
   
-   @Published var matchCell: MatchCell
-
-  init(matchCell: MatchCell) {
+  // MARK: - Properties
+  var useCase: MatchInfoUseCaseProtocol
+  
+  @Published var matchCell: MatchCell
+  @Published var matchDetails: [MatchDetailsModel] = [MatchDetailsModel]()
+  
+  init(useCase: MatchInfoUseCaseProtocol,
+       matchCell: MatchCell) {
+    self.useCase = useCase
     self.matchCell = matchCell
   }
-
+  
+  // MARK: - Methods
+  func getMatchInfo() {
+    matchDetails = useCase.getMatchInfoList()
+  }
+  
 }

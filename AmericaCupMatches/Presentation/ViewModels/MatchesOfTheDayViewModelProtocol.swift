@@ -9,7 +9,6 @@ import Foundation
 
 protocol MatchesOfTheDayViewModelProtocol: ObservableObject {
   // MARK: - Properties
-  var useCase: TeamsUseCaseProtocol { get }
   var matchesList: [MatchCell] { get set }
 
   // MARK: - Methods

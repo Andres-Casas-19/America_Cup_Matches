@@ -17,7 +17,7 @@ struct MatchesOfTheDayView<ViewModel: MatchesOfTheDayViewModelProtocol>: View {
   
   // MARK: - Views
   var body: some View {
-    NavigationView {
+    NavigationStack {
       VStack {
         Text("Fecha 1")
           .foregroundColor(.gray)
@@ -27,13 +27,14 @@ struct MatchesOfTheDayView<ViewModel: MatchesOfTheDayViewModelProtocol>: View {
           .padding(.horizontal, 16)
         List(viewModel.matchesList) { match in
           ZStack {
-            MatchView(match, spacing: 18)
+            MatchView(match,
+                      spacing: 18)
             .widthImages(widthImageAndText: 75, heightImage: 45)
             .background(Color.white)
             .cornerRadius(8)
             .shadow(radius: 8)
             
-            NavigationLink(destination: MatchInfoView(viewModel: MatchInfoViewModel(matchCell: match))) {
+            NavigationLink(destination: MatchInfoView(viewModel: MatchInfoViewModel(useCase: MatchInfoUseCase(), matchCell: match))) {
               EmptyView()
             }
             .opacity(0)
