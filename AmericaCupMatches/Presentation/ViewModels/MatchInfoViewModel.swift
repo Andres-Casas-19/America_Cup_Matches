@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 final class MatchInfoViewModel: MatchInfoViewModelProtocol {
   
@@ -15,8 +16,7 @@ final class MatchInfoViewModel: MatchInfoViewModelProtocol {
   @Published var matchCell: MatchCell
   @Published var matchDetails: [MatchDetailsModel] = [MatchDetailsModel]()
   
-  init(useCase: MatchInfoUseCaseProtocol,
-       matchCell: MatchCell) {
+  init(useCase: MatchInfoUseCaseProtocol, matchCell: MatchCell) {
     self.useCase = useCase
     self.matchCell = matchCell
   }
@@ -25,5 +25,14 @@ final class MatchInfoViewModel: MatchInfoViewModelProtocol {
   func getMatchInfo() {
     matchDetails = useCase.getMatchInfoList()
   }
-  
+
+  func changeCardColor(_ card: CardModel) -> Color {
+    switch card.color {
+    case .yellow:
+      return .yellow
+    case .red:
+      return .red
+    }
+  }
+
 }

@@ -14,7 +14,7 @@ struct MatchInfoUseCase: MatchInfoUseCaseProtocol {
     return [
       MatchDetailsModel(goals: [GoalsModel(minute: "24'", playerName: "Lionel Messi", team: TeamModel(flag: "Argentina", name: "Argentina")),
                                 GoalsModel(minute: "70'", playerName: "Lionel Messi", team: TeamModel(flag: "Argentina", name: "Argentina"))],
-                        cards: [CardModel(color: .yellow, minute: "32", playerName: "Lautaro Martínez", team: TeamModel(flag: "Argentina", name: "Argentina")),
+                        cards: [CardModel(color: .yellow, minute: "32'", playerName: "Lautaro Martínez", team: TeamModel(flag: "Argentina", name: "Argentina")),
                                 CardModel(color: .red, minute: "85'", playerName: "Lionel Messi", team: TeamModel(flag: "Argentina", name: "Argentina")),
                                 CardModel(color: .red, minute: "85'", playerName: "Brad Pitt", team: TeamModel(flag: "Trinidad", name: "Trinidad y Tobago"))]
                        ),

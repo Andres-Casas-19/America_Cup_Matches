@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 protocol MatchInfoViewModelProtocol: ObservableObject {
   
@@ -15,5 +16,6 @@ protocol MatchInfoViewModelProtocol: ObservableObject {
   
   // MARK: - Methods
   func getMatchInfo()
+  func changeCardColor(_ card: CardModel) -> Color
   
 }

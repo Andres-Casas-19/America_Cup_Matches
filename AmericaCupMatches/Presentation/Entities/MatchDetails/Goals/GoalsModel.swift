@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct GoalsModel{
+struct GoalsModel: Identifiable {
+  let id = UUID()
   let minute: String
   let playerName: String
   let team: TeamModel

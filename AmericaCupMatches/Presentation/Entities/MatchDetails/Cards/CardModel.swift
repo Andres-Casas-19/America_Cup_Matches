@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct CardModel {
+struct CardModel: Identifiable {
+  let id = UUID()
   let color: CardColorEnum
   let minute: String
   let playerName: String
